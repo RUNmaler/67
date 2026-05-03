@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "C&C User System",
+    "version": "1.0.0",
+    "environment": "development",
+    "createdAt": "2026-05-03T20:54:00.000Z",
+    "updatedAt": "2026-05-03T20:54:00.000Z",
+    "description": "Local user database with login, remember me, rename and forget me support"
+  },
+  "settings": {
+    "defaultRememberMe": false,
+    "allowRename": true,
+    "allowForget": true,
+    "allowAutoLogin": true,
+    "allowPasswordChange": true,
+    "allowDeleteUser": true,
+    "usernamePrefix": "username",
+    "dateFormat": "utc",
+    "storePasswordsAsPlainText": true,
+    "maxLoginAttempts": 5,
+    "lockMinutes": 15,
+    "sessionTimeoutMinutes": 30,
+    "rememberMeDays": 30
+  },
+  "stats": {
+    "totalUsers": 0,
+    "activeUsers": 0,
+    "rememberedUsers": 0,
+    "totalLogins": 0,
+    "failedLogins": 0,
+    "totalRenames": 0,
+    "totalForgets": 0,
+    "lastUserCreated": null,
+    "lastUserLogin": null,
+    "lastUserRename": null,
+    "lastUpdatedAt": "2026-05-03T20:54:00.000Z"
+  },
+  "users": [
+    {
+      "id": "u_000001",
+      "username": "username_Tue_May_03_2026_20_54_00_GMT",
+      "password": "1234",
+      "createdAt": "2026-05-03T20:54:00.000Z",
+      "updatedAt": "2026-05-03T20:54:00.000Z",
+      "lastLoginAt": null,
+      "lastLogoutAt": null,
+      "loginCount": 0,
+      "failedLoginCount": 0,
+      "remembered": false,
+      "active": true,
+      "verified": false,
+      "locked": false,
+      "lockUntil": null,
+      "roles": ["user"],
+      "permissions": {
+        "login": true,
+        "rename": true,
+        "forget": true,
+        "delete": false,
+        "admin": false
+      },
+      "profile": {
+        "displayName": "",
+        "email": "",
+        "avatar": "",
+        "bio": "",
+        "language": "pt-BR",
+        "theme": "dark",
+        "timezone": "UTC"
+      },
+      "security": {
+        "passwordChangedAt": null,
+        "lastPasswordResetAt": null,
+        "twoFactorEnabled": false,
+        "securityQuestions": [],
+        "sessions": []
+      },
+      "history": {
+        "logins": [],
+        "renames": [],
+        "forgets": [],
+        "passwordChanges": []
+      },
+      "tags": ["default"],
+      "meta": {
+        "source": "manual",
+        "notes": "",
+        "custom": {}
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "sessionId": "s_000001",
+      "username": "username_Tue_May_03_2026_20_54_00_GMT",
+      "createdAt": "2026-05-03T20:54:00.000Z",
+      "expiresAt": "2026-05-03T21:24:00.000Z",
+      "rememberMe": false,
+      "active": false,
+      "ip": "127.0.0.1",
+      "userAgent": "browser"
+    }
+  ],
+  "audit": [
+    {
+      "id": "a_000001",
+      "time": "2026-05-03T20:54:00.000Z",
+      "action": "init",
+      "username": null,
+      "success": true,
+      "details": "Database initialized"
+    }
+  ],
+  "events": [
+    {
+      "id": "e_000001",
+      "time": "2026-05-03T20:54:00.000Z",
+      "type": "system",
+      "message": "System started"
+    }
+  ],
+  "bans": [],
+  "limits": {
+    "maxUsers": 10000,
+    "maxLoginAttempts": 5,
+    "lockMinutes": 15,
+    "maxSessionsPerUser": 3,
+    "passwordMinLength": 1
+  },
+  "backups": [
+    {
+      "id": "b_000001",
+      "createdAt": "2026-05-03T20:54:00.000Z",
+      "reason": "initial",
+      "path": "users.backup.json"
+    }
+  ],
+  "templates": {
+    "defaultUser": {
+      "id": "",
+      "username": "",
+      "password": "",
+      "createdAt": "",
+      "updatedAt": "",
+      "lastLoginAt": null,
+      "lastLogoutAt": null,
+      "loginCount": 0,
+      "failedLoginCount": 0,
+      "remembered": false,
+      "active": true,
+      "verified": false,
+      "locked": false,
+      "lockUntil": null,
+      "roles": ["user"],
+      "permissions": {
+        "login": true,
+        "rename": true,
+        "forget": true,
+        "delete": false,
+        "admin": false
+      },
+      "profile": {
+        "displayName": "",
+        "email": "",
+        "avatar": "",
+        "bio": "",
+        "language": "pt-BR",
+        "theme": "dark",
+        "timezone": "UTC"
+      },
+      "security": {
+        "passwordChangedAt": null,
+        "lastPasswordResetAt": null,
+        "twoFactorEnabled": false,
+        "securityQuestions": [],
+        "sessions": []
+      },
+      "history": {
+        "logins": [],
+        "renames": [],
+        "forgets": [],
+        "passwordChanges": []
+      },
+      "tags": [],
+      "meta": {
+        "source": "manual",
+        "notes": "",
+        "custom": {}
+      }
+    }
+  }
+}
