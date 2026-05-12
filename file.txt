@@ -1,0 +1,152 @@
+O Mazer e o quão incrível ele é:
+The Mazer Website:
+Um site que quando você usasse o email deles, que usa o GuerrilhaMail mas adaptado para username(sua data de criação estática)@(link magnético).(hash do link magnético)
+Este é o Mazer
+no caso, seu email é um host ambulante, porquê o serviço passa seu email para o https://www.email&host-recive.MazerEmail_maker.Mazer.com
+que recebe sua caixa, aí você entra lá no site e vê o que tem mandaram, que é um txt (ou Markdown se tiver formatação ou PDF se tiver elementos extras que o Markdown não permite) Utorrent, além de aceitar @gmai e @liberato.it, aparecendo:
+
+Owner: (Nome)
+Hoster: @(Serviço).com
+Parte HTML:
+<br/>
+Mesg:
+<iframe src="arquivo raw urlizado">
+</iframe>
+Tendo uma caixa de email interna, além de Localstorajar seu email para você não perder ele fácil e entrar imediatamente.
+
+———
+
+Curiosidade: Você pôde enviar um arquivo para eles, eles fazem um link magnético e te entregam (https://www.Mazer_Mlink-maker.Mazer.com)
+Além disso o Mazer não descarta arquivos após upload; gera link magnético, ele te dá um bônus gratuito: o arquivo mas torrentado
+
+———
+
+Outro:
+Curiosidade:ele te dá um senha (que está num backend php e ele gera para você), você cópia e ele transforma em hash, perdendo a original, mas com sistema de verificação, agora, para ver sua caixa de email, precisa da senha, que você coloca, e ele confere com hash deterministica, qualquer erro na hash ele não permite além de armazenar se a senha está correta com Sessionstorage, ao entrar e ver sua caixa postal e sair, você tem que colocar a senha de novo.
+
+Um java (puro) gera a senha, mas manda pro PHP que ele desconhece; o PHP recebe a senha e envia, mas não sabe quem fez; o json é reescrito com a hash por um javascript que não sabe do PHP; um último PHP pega o json, mas não sabe quem escreveu, e manda pro user e por fim gera uma hash.
+no caso ele guarda o arquivo no https://magnetic_arquive.Mazer.com com direito a LocalStorage link saver in backend (LSlsib)
+
+Além disso, o magnetic_arquive é uma biblioteca de TODOS os seus arquivos torrent e magnetic links (Mlinks) salvos, ambos na seção: Bookarquive_(nome) — OBS: sem a extensão original, só o nome, substituindo "_" e "-" pro espaço e adicionado no final a própria extensão dedicada: .Mlinks — Que é a extensão dedicada, privada e do próprio site fez e entende, tipo o .onion do Tor mas sem onion rotating —, que ao entrar, mostra uma subpágina dedicada com o arquivo e o link embaixo; Além disso ele usa: .lower(); .strip(); .capitalize(); .casefold() dentro do PHP, em uma processo pythonizado, visto que o backend do site foi construído em cima de PHP. 
+Além disso, o input também caí no Pythonizador, pois ele faz: .strip(); .casefold() para não ter diferença, e o buscador de arquivo ser indiferente a maiúsculo e minúsculo; Além disso, ele funciona gravando o triple-link (extensão original; link magnético; .mlink) do arquivo no LSaBD (LocalStorage and Backed Dediced).
+
+O Mazer é uma hydra: pois ele usa (veja só): [.com; .org; .eu; .ui (revivido pelo mazer); .gn e .ru].
+
+Na verdade ambos usa PHP, pois o Mazer opera em cima do MazerSever (sim, um servidor privado escrito completamente em PHP, e dentro do PHP, com um servidor WASM separado para necessidades: Como desativar extensões de anúncios; rastreador; desativação do robot.txt), TODOS OS MAZER.O servidor deles faz uma coisa:
+Injeta anúncios invisíveis que não aparece e que não aparecem, os anúncios são de url magentados in backend (UMiB), e algumas páginas, como o Bookarquives.
+Além de ter Pi-hole Adblock in-sever. Na verdade você tem que pagar para acessar, uma libra estrelinha, porém é salvo em servidor que você pagou: Nem mesmo em backend ou LocalStorage, é em server, o Https://www.Paycenter-Paywall.Mazer.com
+
+—— Planos do Mazer (Eles precisam de dinheiro para fazer tudo isso) ——
+100 KWD para lifetime; 100 Libras estrelinhas por ano; 1 Libra estrelinha por mês; 1 dólar por semana.
+
+———
+
+Na verdade, no lifetime, você não ganha mais banda de dados (Pois o Mazer acha errado cobrar por algo que deveria ser público), pois a banda é pública e usa NFTS para salvar seus arquivos: Mas pôde ter vários mlink-email, auditar código (não escrever), escrever um por cima dos severs dele um HTML (criar uma subpágina num subdomínio: Https://www.(Sua subpágina se tiver).(Nome da sua página).(dominio da sua página).Fanmaked_site.Mazer.com, além de um AntiDistribuided-Denial-Of-Service (AntiDDOS) garantido por eles, pois o pedido de entrada para entrar no site demora 3 minutos + criação de usuário + 1 minuto: Senha recibida; pedir a senha; verificação por hash; só depois disso deixa entrar, embora para o criador do site é só entrar com sua senha; Achei inovador o fato de ter um subdomínio com o nome que você escolhe; sua página e subpáginas próprias.
+Pagantes não vê o PHP por motivos óbvios (evasão, burlagem, etec), mas vê o HTML; Jss; Css do Mazer (exceto páginas sensíveis); Mas quem paga lifetime pôde criar sua subpágina, que recebe a ajuda do MazerSever, e ela é indexada (com DNS + nome que você escolheu) pelo Fansite_maker, que é o Google (navegador) do Mazer para achar seu site e os mais acessados e permissão para usar Raw-url, arquivos do computador (que são referenciados por links magnéticos do Mazer para você usar no seu site) e até mesmo BACKEND E APIs; tudo porquê assinou um ÚNICO plano.
+É tanto que dá para você usar o próprio Mazerbots.txt, e seus sites são indexados por: .magneticsite.mazer, mas tem outros: .gn e .ru, que são personalizados mas os únicos, e sofrem uma extraindexação (.Mazer) para o Fansite_service e Fancrawler encontrar, mas se você não usar ela, e fazer o Mazerbot (por mazerbot.txt) não indexar, ele ainda é indexado, mas por link magnético, e se quiser, pelo secret.txt,precisa até de senha para entrar; porém os administradores podem ver todos para evitar conteúdo ilegal, além de Todos os sites, sem exceção, são indexados pelo MazerSever (e por causa disso recebem o Backend do Mazer de graça, embora como só escreve seu código próprio/privado em cima do mazer, você não pôde ler, mas pode colocar seus anúncios (por link magnético) que são protegidos do WASM)
+Além disso você recebe proteção DCMA que o mazer faz para seu site. 
+Além de nota fiscal (.pdf) automática se alguém pagar algo no seu site e eles te enviam na caixa postal.
+
+——— Pirataria e o Mazer ———
+OBS: Você pôde colocar um Pirate Bay lá dentro que ele recebe automaticamente um secret.txt + não indexação dos crawlers automáticos para dar os seus filmes jack Sperry, que eles recebem também Link magnético para se você fazer download ter o arquivo; não uma assinatura cancelavél, ele só tem que ter .pirate na url, pois o Mazer não classifica pirataria como crime a menos que você não dê 10% ao criador original: Aí eles derrubam seu site e removem a indexação dele do MazerSever, que deixa o nome público para qualquer um usar.É tanto que dá para você usar o próprio Mazerbots.txt, e seus sites são indexados por: .magneticsite.mazer, mas tem outros: .gn e .ru, que são personalizados mas os únicos, e sofrem uma extraindexação ([sua url mesmo sem .magneticsites.mazer, gn ou ru].mazer) para o Fansite_service e Fancrawler encontrar, mas se você não usar ela, e fazer o Mazerbot (por mazerbot.txt) não indexar, ele ainda é indexado, mas por link magnético, e se quiser, pelo secret.txt,precisa até de senha para entrar; porém os administradores podem ver todos para evitar conteúdo ilegal, além de Todos os sites, sem exceção, são indexados pelo MazerSever (e por causa disso recebem o Backend do Mazer de graça, embora como só escreve seu código próprio/privado em cima do mazer, você não pôde ler, mas pode colocar seus anúncios (por link magnético) que são protegidos do WASM)
+
+Além disso, você recebe proteção DCMA que o mazer faz para seu site. 
+Além de nota fiscal (.pdf) automática se alguém pagar algo no seu site e eles te enviam na caixa postal. No caso, crawlers externos não afetam subdomínios dentro do Mazer, pois é infraestrutura própria; privada e já auto indexado pelo seu serviço (Fansite_maker; MazerSever (que é protegido de externos) & Mazerbots/Crawlers próprios)
+
+ignora o conteúdo central e vê o Outro:
+
+——— Minhas opiniões ———
+eu achei revolucionário o Fansite_Mazer,embora é fácil achar ele (é só adicionar na url, exceto os pirates e secrets.txt ou não indexados) o Mazer é o primeiro serviço a permitir você usar SEU NOME DE DOMÍNIO, sua extensão de domínio, sua url, segurança e DNS e etc.
+
+— Sobre sua extensão de domínio e outras correções (outro) —
+Na verdade não 
+o nome, HTML, backend próprio e etc É TUDO SEU
+menos a extensão que é (um pouco) limitado 
+e os arquivos ficam assim:
+https://(subpágina se tiver).(nome da página).(extensão)/(arquivo se você escreveu).fansite_Mazer.Mazer.com
+exemplo:
+https://Mcaffe donot kill himself.magneticsites/secret.txt.fansite_Mazer.Mazer.com
+
+———
+
+Curiosidade: O torrent é criado com o link magnético porquê um link magnético sem arquivo torrent é tipo tentar ter um coração só fumando: impossível 
+Por isso. 
+além disso, lembra da fórmula que fiz? tá incorreta, na verdade é assim:
+https://(sub).(página).(extensão do mazer)/(link magnético do arquivo .txt, embora você pode usar o arquivo .txt normal).fansite_mazer.Mazer.com
+
+——— SIDELOADING ———
+
+Além disso, o mazer tem o:
+https://www.Sideloading.mazer.com
+Que permite tipo o Fansite, mas com seus arquivos, um fórum para arquivos: embora são verificados antes e só são liberados 1 semana depois: depois de serem verificados duplamente pelo HybridAnalyses e VirusTotal
+No caso 
+Além de utilizar a Playstore dentro do site (https://www.Playstore.Sideloading.Mazer.com)
+
+———
+
+Curiosidade: 
+O Fansite do mazer ("Fansite_mazer") permite pesquisar o nome do site e achar nomes parecidos, assim como o Google, mas sem 1500 bilhões motores de rastreamento (pois ele salva apenas oque você pesquisou no backend para você reacessar o que já pesquisou), por isso que eles são indexados pelo motor do Mazer, exceto pirate.txt; secret.txt e site não indexados de propósito, que precisam da DNS  que o criador precisa te enviar, ou secret.txt que precisa de senha e pirate.txt que é ambos.
+o DNS do Fansite_mazer é 156.767.676
+isso é imutável do Backend, exceto de o criador mudar lá no backend 
+então sim
+você pôde acessar:
+https://JEDKH.ru.mazer/secret.txt.156.767.676.Mazer.com
+
+Esclarecimento:
+Isso nem mesmo é DNS, é na verdade, DNS Proprietário, este número é o Oficial-link do Mazer
+O que é isso? 
+Para serviços que o Mazer quer manter secretos para não afetar seu público (não eles); ou se ele tiver que remover do robot.txt do site raiz (https://www.Mazer.com), ele tem um jeito de acessar, que não é o nome, é o Oficial-link, o Oficial-link é gravado no backend, o nome humano e legível é sempre humano (exemplo: Fansite_mazer),mas o Oficial link, gravado no backend, é o nome real e oficial, se você escreve ele, o PHP imediatamente reconhece e te manda para a página exata: OBS: Isso não se aplica a sites criados por fans pois não são oficiais, mas são também salvos no PHP deles para evitar fácil derrubado (exemplo: LocalStorage poderia ser limpo por limpar o cache).
+
+Todos os oficial-links:
+MazerEmail: 122.212.1212
+Email&Hostreciver: 1900.0045.000
+Mazer Password Generator: Backend, não um serviço 
+Mazer_Mlink-maker: 1100.0099.9900
+Magnetic_Archive: 677.776.77u
+Bookarquive_(nome): 677.776.77u.(link magnético)
+LSaBD: Backend 
+Fansite_Mazer: 156.767.676
+Fancrawler; MazerSever; Pi-hole Adblock In-Server: Backend 
+
+Oficial link da raiz (Mazer):
+https://www.123.456.Mazer.com
+Assim abre o Mazer com Oficial link:
+https://123.456.MZ.com
+Só precisa do Mazer no começo o Mazer redirecionar corretamente a sua própria raiz Oficial-Linked.
+
+lembra do email do Mazer? Na verdade, ele te dá um SSO in Email (SSOiM) de GRAÇA E BÔNUS! 
+
+— EXPLICAÇÕES —
+Então 
+não exatamente uma pirataria
+tá meio pra mais sideloading só que para filmes
+porquê você tem que pagar 10% do seus ganhos ao criador
+
+Sedes do Mazer:
+1. Suécia 
+2. Brasil
+
+Servidores:
+1. Suécia 
+2. Brasil
+3. EUA
+4. Alemanha 
+5. Canadá 
+
+Porquê não tem sede nos EUA e Canadá? Porquê a F.E (Five Eyes) pode manda National Secure Lettery (NSL):
+    Oque QUEBRARIA a lei de privacidade do Mazer.
+
+Aviso:
+O Oficial-link (O.L from Mazer; O.LFM, também refrenciado como DNS; DNS do Mazer) é destinado apenas aos serviços (e/ou pagínas) do Mazer, é para serviços oficiais para que o público continue acessando mesmo caso: A pagína seja derrubada; Nome removido ou/e corrompido ou barreira geologica por palavras-chaves.
+    Como: O servidor que sustenta todo o organismo do Mazer, o MazerSever, e seu backend (MazerPHP Backend), reconhece o site por 2 formas:
+    Nome "humano": Ex.: Fansite_mazer (https://www.fansite_Mazer.Mazer.com),
+    E o seu método proprietário: O.L from Mazer (Oficial-link); DNS proprietarío, e etc, ex.:156.767.676 [https://156.767.676.Mazer.com] (Fansite_mazer).
+Assim, é possível acessar o Mazer [e seus serviços] mesmo por bloqueio, pois o MazerPHP (e o MazerSever) reconhecem o serviço pelos os dois nomes.
+Embora os O.LFM sejam "imutáveis" (no Papel), o criador do Mazer pode sim mudar o O.LFM, com aviso prevío, para evitar bloqueios por palavra-chaves e/ou derrubadas do DNS,
+Além disso: é publico o fato quê o Mazer não distribuem o O.LFM para os sites criados pelo Fansite_mazer (Sites de fãs), pois não são serviços oficiaís do Mazer, mas sim outro método: Fanlinked-method-index (FLMI)
+
+Oque o FLMI faz:
+    Faz um link magnetico [já na criação]:
+    magnet:?xt=urn:btih:1a994ab6add3b90c3c44d3c6221054a27092e70e&dn=FLMI;\\URL:Mlink.(Nome do seu site, ex.:McaffeUnkillHimslef).magnetic service&tr=https://www.Mazer.com
+    Encurtado (mas ainda funciona): magnet:?FLMI;\\URL:ML.(Nome do seu site, ex.:McaffeUnkillHimslef)&tr=https://www.Mazer.com
+O qual o MazerPHP reconhece seu site por FLMI, que claramente, só o Mazer reconhece este formato, embora salva o FLMI no MazerSever para requisições, caso o backend seje afetado, assim como o O.LFM faz; Salva o O.F (Oficial Link) no SeverMazer: Caso o O.LFM não funcione, ele pede diretamente ao MazerSever.
