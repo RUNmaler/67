@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#style"?>
 <root>
+    <!-- O estilo fica embutido aqui para fazer o XML rodar sozinho -->
+    <xsl:stylesheet id="style" version="1.0" xmlns:xsl="http://w3.org">
+        <xsl:template match="/">
+            <html>
+                <body style="background:#000; color:#fff; font-family:sans-serif; text-align:center; padding:20px;">
+                    <div style="max-width:250px; margin:0 auto;">
+                        <img src="{root/url}" style="width:100%; height:auto; border-radius:8px;" />
+                        <p style="margin-top:15px;">
+                            <a href="{root/url}" style="color:#00f; font-weight:bold; text-decoration:underline;"><xsl:value-of select="root/label"/></a>
+                        </p>
+                    </div>
+                 body>
+            </html>
+        </xsl:template>
+    </xsl:stylesheet>
+    
+    <!-- Seus dados originais -->
     <url>https://raw.githubusercontent.com/RUNmaler/67/refs/heads/main/Iamfromfamily_not.png</url>
     <label>Click me</label>
 </root>
+
